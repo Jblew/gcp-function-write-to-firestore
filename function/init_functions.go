@@ -1,9 +1,9 @@
-package functions
+package function
 
 import (
 	"log"
 
-	"github.com/Jblew/git-diary/functions/app"
+	"github.com/Jblew/gcp-function-write-to-firestore/function/app"
 )
 
 var application *app.App

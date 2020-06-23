@@ -1,4 +1,4 @@
-module github.com/Jblew/gcp-function-write-to-firestore/functions
+module github.com/Jblew/gcp-function-write-to-firestore/function
 
 go 1.13
 
