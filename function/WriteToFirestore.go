@@ -1,6 +1,7 @@
 package function
 
 import (
+	"context"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -40,7 +41,7 @@ func handleWriteToFirestore(w http.ResponseWriter, req *http.Request) (string, e
 		return "", fmt.Errorf("Invalid request secret '%s'", secretKey)
 	}
 
-	err = application.WriteToFirestore(contents)
+	err = application.WriteToFirestore(context.Background(), contents)
 	if err != nil {
 		return "", err
 	}
